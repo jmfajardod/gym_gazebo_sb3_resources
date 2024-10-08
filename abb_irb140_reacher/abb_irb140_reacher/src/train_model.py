@@ -6,7 +6,7 @@
 
 from abb_irb140_reacher.task_env.abb_irb140_vel_reacher import ABBIRB140VelReacherEnv
 
-import gym
+import gymnasium as gym
 import rospy
 import rospkg
 import sys
@@ -26,7 +26,7 @@ if __name__ == '__main__':
     ros_node.ros_kill_all_processes()
 
     # Launch Gazebo 
-    ros_gazebo.launch_Gazebo(paused=True, gui=False, custom_world_pkg='abb_irb140_reacher', custom_world_name='no_collision.world')
+    ros_gazebo.launch_Gazebo(paused=True, gui=True, custom_world_pkg='abb_irb140_reacher', custom_world_name='no_collision.world')
 
     # Start node
     rospy.logwarn("Start")

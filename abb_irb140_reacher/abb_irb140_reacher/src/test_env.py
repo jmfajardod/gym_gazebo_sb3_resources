@@ -9,7 +9,7 @@ from abb_irb140_reacher.task_env.irb140_reacher_pos import ABBIRB140ReacherEnv
 # from abb_irb140_reacher.robot_env.abb_irb140_vel import ABBIRB140Vel
 # from abb_irb140_reacher.task_env.abb_irb140_vel_reacher import ABBIRB140VelReacherEnv
 
-import gym
+import gymnasium as gym
 import rospy
 import sys
 from frobs_rl.common import ros_gazebo

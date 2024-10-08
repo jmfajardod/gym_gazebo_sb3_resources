@@ -1,8 +1,8 @@
 #!/bin/python3
 
-import gym
-from gym import spaces
-from gym.envs.registration import register
+import gymnasium as gym
+from gymnasium import spaces
+from gymnasium.envs.registration import register
 from frobs_rl.common import ros_gazebo
 from frobs_rl.common import ros_controllers
 from frobs_rl.common import ros_node

@@ -1,7 +1,7 @@
 #!/bin/python3
 
-from gym import spaces
-from gym.envs.registration import register
+from gymnasium import spaces
+from gymnasium.envs.registration import register
 from abb_irb140_reacher.robot_env import abb_irb140_servo
 import rospy
 

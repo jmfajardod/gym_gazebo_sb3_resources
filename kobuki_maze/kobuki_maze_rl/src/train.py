@@ -3,7 +3,7 @@
 from kobuki_maze_rl.task_env import kobuki_empty
 from kobuki_maze_rl.task_env import kobuki_dynamic_v3
 from kobuki_maze_rl.task_env import kobuki_maze
-import gym
+import gymnasium as gym
 import rospy
 import rospkg
 import sys
@@ -30,9 +30,9 @@ if __name__ == '__main__':
     rospy.init_node('kobuki_maze_train')
 
     # Launch the task environment
-    # env = gym.make('KobukiEmptyEnv-v0')
+    env = gym.make('KobukiEmptyEnv-v0')
     # env = gym.make('KobukiDynamicEnv-v3')
-    env = gym.make('KobukiMazeEnv-v0')
+    # env = gym.make('KobukiMazeEnv-v0')
 
     #--- Normalize action space
     env = NormalizeActionWrapper(env)

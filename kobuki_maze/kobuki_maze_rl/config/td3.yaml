@@ -10,11 +10,11 @@ model_params:
   save_replay_buffer: True
 
   # Load model params
-  load_model: True
+  load_model: False
   model_name: trained_model_v2_2
 
   # Logging parameters
-  log_folder: TD3_v2_3
+  log_folder: TD3_v2_Test
   log_interval: 1 # The number of episodes between logs
   reset_num_timesteps: False # If true, will reset the number of timesteps to 0 every training 
 
